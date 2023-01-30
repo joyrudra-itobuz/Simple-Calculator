@@ -58,6 +58,9 @@ document.querySelector(".division").addEventListener("click", function () {
 document.querySelector(".clear").addEventListener("click", function () {
   document.querySelector(".display").value += "";
 });
+document.querySelector(".decimal").addEventListener("click", function () {
+  document.querySelector(".display").value += ".";
+});
 
 console.log("Working Till Input!");
 
