@@ -8,10 +8,17 @@ import "./demo.js";
 // console.log(document.getElementsByClassName(".seven").textContent)
 console.log("Starts!");
 
+// function justDisplay(num) {
+//   return (document.querySelector(".display").value += num);
+// }
+
 // document.querySelector(".display").value = 7;
 document.querySelector(".one").addEventListener("click", function () {
   document.querySelector(".display").value += "1";
 });
+
+// document.querySelector(".one").addEventListener("click", justDisplay('"1"'));
+
 document.querySelector(".two").addEventListener("click", function () {
   document.querySelector(".display").value += "2";
 });
