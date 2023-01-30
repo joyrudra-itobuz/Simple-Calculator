@@ -61,6 +61,10 @@ document.querySelector(".clear").addEventListener("click", function () {
 
 console.log("Working Till Input!");
 
+function evil(fn) {
+  return new Function("return " + fn)();
+}
+
 document.querySelector(".equals").addEventListener("click", function () {
   let input = document.querySelector(".display").value;
   if (input == undefined) {
@@ -68,7 +72,7 @@ document.querySelector(".equals").addEventListener("click", function () {
     document.querySelector(".display").value = "Please Enter A Valid Math";
   }
   console.log(input);
-  let result = eval(input);
+  let result = evil(input);
   console.log(result);
   document.querySelector(".display").value = result;
 });
