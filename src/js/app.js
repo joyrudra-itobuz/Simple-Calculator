@@ -61,8 +61,8 @@ document.querySelector(".clear").addEventListener("click", function () {
 
 console.log("Working Till Input!");
 
-function evil(fn) {
-  return new Function("return " + fn)();
+function evil(num) {
+  return new Function("return " + num)();
 }
 
 document.querySelector(".equals").addEventListener("click", function () {
