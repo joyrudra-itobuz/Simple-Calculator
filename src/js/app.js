@@ -1,3 +1,9 @@
+import "../scss/app.scss";
+
+/* Your JS Code goes here */
+
+/* Demo JS */
+import "./demo.js";
 // document.querySelector(".seven").textContent;
 // console.log(document.getElementsByClassName(".seven").textContent)
 console.log("Starts!");
@@ -10,6 +16,7 @@ document.querySelector(".two").addEventListener("click", function () {
   document.querySelector(".display").value += "2";
 });
 document.querySelector(".three").addEventListener("click", function () {
+  ˍ;
   document.querySelector(".display").value += "3";
 });
 document.querySelector(".four").addEventListener("click", function () {
